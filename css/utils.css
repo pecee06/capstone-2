@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Josefin+Sans:wght@300&family=Merriweather:wght@300&family=Pacifico&display=swap');
+
+.align{
+    align-items: center;
+}
+.border-b{
+    border: 1px solid black;
+}
+.border-r{
+    border: 1px solid red;
+}
+.bg-grey{
+    background-color: grey;
+}
+.bold{
+    font-weight: bold;
+}
+.block{
+    display: block;
+}
+.center{
+    text-align: center;
+}
+.flex-container{
+    display: flex;
+}
+.grid-container{
+    display: grid;
+}
+.hand1{
+    font-family: 'Cookie', cursive;
+}
+.hand2{
+    font-family: 'Pacifico', cursive;
+}
+.justify{
+    justify-content: center;
+}
+.light{
+    font-weight: 100;
+}
+.m-auto{
+    margin: auto;
+}
+.normal{
+    text-decoration: none;
+    color: black;
+}
+.sans{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.serif{
+    font-family: 'Merriweather', serif;
+}
+.self-align{
+    justify-self: center;
+    align-self: center;
+}
+.underline{
+    text-decoration: underline;
+}
+.wrap{
+    flex-wrap: wrap;
+}

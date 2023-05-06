@@ -1,0 +1,306 @@
+#about{
+    width: 70vw;
+    font-size: 2vw;
+    line-height: 1.5;
+    background-color: darkslategray;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    text-align: justify;
+    border: 5px solid orangered;
+}
+
+#about:hover{
+    background-color: orangered;
+    border: 5px solid darkslategray;
+}
+
+body{
+    width: 90vw;
+}
+
+.card{
+    text-align: center;
+    margin: 50px 0;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.card:hover{
+    box-shadow: 0 0 50px -40px;
+}
+
+#contact{
+    margin-bottom: 50px;
+}
+
+#contact ul{
+    justify-content: space-between;
+}
+
+#contact li{
+    min-width: 100px;
+    text-align: center;
+}
+
+#contact p{
+    margin: 0 5px;
+    font-size: 1.5vw;
+}
+
+#contact img{
+    height: 3vw;
+}
+
+.education ul{
+    grid-template-columns: 1fr 1fr;
+    margin: 50px 0;
+    padding: 10px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+footer{
+    padding: 20px;
+    border: 10px solid lightgreen;
+    margin-top: 30px;
+}
+
+.github-ico{
+    height: 3vw;
+    margin: 10px 0;
+}
+
+hr{
+    border: none;
+    border-bottom: 1vw dotted rgb(238, 238, 238);
+    width: 70px;
+}
+
+.logo span{
+    font-size: 2.5vw;
+}
+
+.logo span:hover{
+    cursor: default;
+}
+
+.links{
+    justify-content: space-evenly;
+    font-size: 1.5vw;
+}
+
+.links a:hover{
+    color: orangered;
+}
+
+li{
+    list-style: none;
+}
+
+.navbar{
+    grid-template-columns: 2fr 1fr;
+}
+
+.navbar div{
+    padding: 10px 0;
+}
+
+.name{
+    font-size: 1.5vw;
+}
+
+.projects{
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.resume{
+    font-size: 1.7vw;
+}
+
+h2{
+    font-size: 2.3vw;
+    color: gray;
+}
+
+.screenshot{
+    height: 25vw;
+}
+
+.skills{
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+}
+
+.skills td{
+    min-width: 150px;
+    margin: 0 10px;
+}
+
+.titlebox{
+    flex-direction: column;
+}
+
+.titlebox h1{
+    font-size: 8vw;
+    color: darkslategray;
+    box-shadow: 0 0 80px -50px;
+}
+
+.titlebox p{
+    font-size: 20px;
+}
+
+.work-experience ul{
+    grid-template-columns: 1fr 1fr;
+    margin: 50px 0;
+    padding: 10px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+@media (max-width: 900px){
+    .navbar{
+        grid-template-rows: 1fr 0.5fr;
+    }
+    .logo{
+        grid-column: span 2;
+        text-align: center;
+    }
+    .logo span{
+        font-size: 20px;
+    }
+    .links{
+        grid-column: span 2;
+        font-size: 15px;
+    }
+    #contact ul{
+        justify-content: center;
+    }
+    #contact img{
+        height: 30px;
+        margin: 10px 0;
+    }
+    #contact p{
+        font-size: 15px;
+    }
+    .resume{
+        font-size: 2.5vw;
+    }
+    h2{
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 650px){
+    .titlebox p{
+        font-size: 13px;
+    }
+    #contact p{
+        font-size: 10px;
+    }
+    #about{
+        width: 60vw;
+        margin: 0 auto;
+        line-height: 2;
+        width: 80vw;
+        font-size: 15px;
+        border: none;
+        border-radius: 0;
+    }
+    .projects{
+        grid-template-rows: repeat(4,50vw);
+    }
+    .card{
+        grid-column: span 2;
+    }
+    .screenshot{
+        height: 35vw;
+    }
+    .resume ul{
+        grid-template-rows: 80px 80px;
+    }
+    .resume ul div{
+        grid-column: span 2;
+    }
+    .resume{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .github-ico{
+        height: 20px;
+    }
+    .card:hover{
+        box-shadow: none;
+    }
+    .about-heading{
+        margin-top: 50px;
+        margin-left: 10px;
+        font-size: 25px;
+    }
+    .project-heading{
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 25px;
+    }
+    .skills{
+        grid-template-rows: repeat(4,1fr);
+    }
+    .skills div{
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 320px){
+    body{
+        width: 99vw;
+    }
+    .navbar{
+        grid-template-rows: 50px;
+    }
+    .logo{
+        display: none;
+    }
+    #contact li{
+        text-align: left;
+        min-width: 80px;
+    }
+    #contact p{
+        font-size: 8px;
+    }
+    #about{
+        width: 100vw;
+        font-size: 10px;
+        line-height: 2.5;
+    }
+    footer{
+        border: none;
+        padding: 0;
+    }
+    .resume ul{
+        grid-template-rows: 60px 60px;
+    }
+    .resume{
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    .skills td{
+        font-size: 15px;
+    }
+    .github-ico{
+        height: 15px;
+    }
+    .about-heading{
+        margin-top: 80px;
+        font-size: 22px;
+    }
+    .project-heading{
+        margin-top: 20px;
+        font-size: 22px;
+    }
+}
